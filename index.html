@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>TODO List</title>
+    <link rel="stylesheet" href="/css files/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <!-- <h1 class="todos-header">ToDos</h1>
+    <div class="todo-input" id="newtask">
+      <input type="text" placeholder="Add Tasks" />
+      <button class="btn-style btn-1" id="push" onclick="add()"><i class="fas fa-regular fa-plus"></i></button>
+    </div>
+    <div id="tasks"></div>
+    <div class="todo-btns" id="todo-btns">
+      <button class="btn-style" id="all"><b>All</b></button>
+      <button class="btn-style" id="active"><b>Active</b></button>
+      <button class="btn-style" id="completed"><b>Completed</b></button>
+      <button class="btn-style" id="clear-completed" ><b>Clear Completed</b></button>
+      <button class="btn-style" id="all-clear"><b>Clear All</b></button>
+    </div> -->
+
+        <div class="container">
+            <h1 class="app-title">Todos</h1>
+            <h2 class="empty-state__title">Add your first todo</h2>
+            <form class="js-form">
+                <input autofocus type="text" aria-label="Enter a new todo item" placeholder="Enter a Task"
+                    class="js-todo-input">
+            </form>
+            <ul class="todo-list js-todo-list"></ul>
+
+            <div class="empty-state">
+                <svg class="checklist-icon">
+                    <use href="#checklist-icon"></use>
+                </svg>
+            </div>
+
+
+        </div>
+
+
+        <script src="/js files/app.js"></script>
+</body>
+
+</html>
