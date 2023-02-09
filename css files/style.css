@@ -32,11 +32,6 @@ html {
     opacity: 0.5;
   }
   
-  svg {
-    width: 64px;
-    height: 64px;
-  }
-  
   .todo-list {
     list-style: none;
     margin-bottom: 20px;
@@ -73,25 +68,17 @@ html {
   }
   
   .tick::before {
-    content: '✓';
+    content: '';
     font-size: 20px;
-    /* display: none; */
   }
   
-  .done .tick {
-    display: inline;
+  .done .tick::before  {
+    content: '✓';
   }
   
   .delete-todo {
-    /* padding: px; */
     outline: none;
     cursor: pointer;
-  }
-  
-  .delete-todo svg {
-    width: 30px;
-    height: 30px;
-    pointer-events: none;
   }
   
   form {
@@ -130,7 +117,7 @@ html {
     display: flex;
   }
 
-  .isChecked{
+  .done span{
     text-decoration: line-through;
   }
 
@@ -139,6 +126,20 @@ html {
     justify-content: center;
   }
 
- 
+  .todo-btns {
+    margin: 20px;
+display: flex;
+justify-content: center;
+gap: 20px;
+  }
+
+ .btn-style {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  color: bisque;
+  background-color: #333;
+  border-radius: 10%;
+ }
 
   
